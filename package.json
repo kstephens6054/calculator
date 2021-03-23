@@ -1,12 +1,25 @@
 {
-  "name": "node-boilerplate",
+  "name": "fcc-javascript-calculator",
   "version": "0.1.0",
-  "description": "",
+  "description": "FreeCodeCamp.org Javascript Calculator certification project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve src/**/*.html --out-dir dev --cert /home/kstep/.certificates/localhost/cert.pem --key /home/kstep/.certificates/localhost/key.pem --open",
+    "build": "parcel build src/**/*.html --out-dir dist",
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "Kurt Stephens <kstephens6054@gmail.com> (https://github.com/kstephens6054)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "parcel": "*",
+    "parcel-bundler": "^1.12.5"
+  },
+  "jest": {
+    "roots": ["<rootDir>/src/", "<rootDir>/tests/"]
+  }
 }

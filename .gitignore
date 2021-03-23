@@ -76,6 +76,10 @@ web_modules/
 .cache
 .parcel-cache
 
+# parcel-bundler output directories
+dev
+dist
+
 # Next.js build output
 .next
 out
@@ -107,6 +111,9 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# VSCode workspace settings
+.vscode
 
 # yarn v2
 .yarn/cache
